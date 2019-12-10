@@ -330,11 +330,18 @@ template {
     box-shadow: 0px 5px 15px rgba #E3B873, 0.2;
     transition: box-shadow 0.3s; }
     .button--primary:hover {
-      box-shadow: none; }
+      cursor: pointer;
+      box-shadow: none;
+      background-color: #0000FF; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
-    color: #fff; }
+    color: #fff;
+    transition: box-shadow 0.3s; }
+    .button--outline:hover {
+      cursor: pointer;
+      box-shadow: none;
+      background-color: #0000FF; }
 
 .container {
   width: 85%;
