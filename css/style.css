@@ -327,20 +327,21 @@ template {
   .button--primary {
     background-color: #E3B873;
     color: #fff;
-    box-shadow: 0px 5px 15px rgba #E3B873, 0.2;
-    transition: box-shadow 0.3s; }
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+    transition: background-color 2s; }
     .button--primary:hover {
       cursor: pointer;
       box-shadow: none;
       background-color: #0000FF; }
+    .button--primary:focus {
+      outline: none; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
-    transition: box-shadow 0.3s; }
+    transition: background-color 2s; }
     .button--outline:hover {
       cursor: pointer;
-      box-shadow: none;
       background-color: #0000FF; }
 
 .container {
@@ -395,7 +396,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 40px;
-  transition: color 0.2s; }
+  transition: color 2s; }
   .nav__item:hover {
     color: #E3B873; }
 
@@ -403,7 +404,10 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 45px;
+  transition: color 2s; }
+  .contacts__phone:hover {
+    color: #fff; }
 
 .hero {
   position: relative;
@@ -449,7 +453,10 @@ body {
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    transition: 2s; }
+    .hero__scroll-down:hover {
+      color: #131313; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -471,7 +478,8 @@ body {
     text-decoration: none;
     color: #E3B873;
     transform: rotate(90deg);
-    line-height: 0.8; }
+    line-height: 0.8;
+    transition: 2s; }
     .instagram__link::after {
       display: flex;
       content: '';
@@ -479,6 +487,8 @@ body {
       height: 1px;
       background-color: #E3B873;
       margin-left: 8px; }
+    .instagram__link:hover {
+      color: #131313; }
 
 .title {
   margin: 0;

@@ -43,6 +43,9 @@
     text-transform: uppercase
     text-decoration: none
     color: $light
+    transition: 2s
+    &:hover
+      color: $dark
     &::after
       content: ''
       background: url('../img/arrow-down.svg') no-repeat center
@@ -64,6 +67,7 @@
     color: $primary
     transform: rotate(90deg)
     line-height: 0.8
+    transition: 2s
     &::after
       display: flex
       content: ''
@@ -71,6 +75,8 @@
       height: 1px
       background-color: $primary
       margin-left: 8px
+    &:hover
+      color: $dark
 .title
   margin: 0 
   font-family: 'Yeseva One', cursive
